@@ -9,6 +9,16 @@ $(document).ready(function() {
 
   function initialData(data) {
     console.log(data);
+    var newsResults = data.response.results
+    var newsFeedHTML = "";
+
+    $.each(newsResults.slice(0,6), function(i, item) {
+        newsFeedHTML += "<li>" + item.webTitle + "</li>"
+    });
+
+    console.log(newsFeedHTML);
+
+    $('#uk-news-feed').html(newsFeedHTML);
   };
 
   $.getJSON(guardianAPI, guardianOptions, initialData);
