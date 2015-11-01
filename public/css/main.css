@@ -61,3 +61,8 @@ main {
 .panels {
   height: 90%;
 }
+
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
