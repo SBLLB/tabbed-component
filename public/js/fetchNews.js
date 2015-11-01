@@ -13,8 +13,9 @@ $(document).ready(function() {
     var newsFeedHTML = "";
 
     $.each(newsResults.slice(0,5), function(i, item) {
+      console.log(item);
         newsFeedHTML +=   '<li> <a href="' 
-                          + item.webURL + '">' 
+                          + item.webUrl + '">' 
                           + item.webTitle + '</a><p>' 
                           + item.fields.trailText + '</p></li>';
     });
@@ -39,7 +40,7 @@ $(document).ready(function() {
 
       $.each(newsResults.slice(0,5), function(i, item) {
           newsFeedHTML +=   '<li> <a href="' 
-                            + item.webURL + '">' 
+                            + item.webUrl + '">' 
                             + item.webTitle + '</a><p>' 
                             + item.fields.trailText + '</p></li>';
       });
