@@ -9,15 +9,15 @@ $(document).ready(function() {
   };
 
   function initialData(data) {
-    console.log(data);
     var newsResults = data.response.results
     var newsFeedHTML = "";
 
-    $.each(newsResults.slice(0,6), function(i, item) {
-        newsFeedHTML += "<li>" + item.webTitle + "</li>"
+    $.each(newsResults.slice(0,5), function(i, item) {
+        newsFeedHTML +=   '<li> <a href="' 
+                          + item.webURL + '">' 
+                          + item.webTitle + '</a><p>' 
+                          + item.fields.trailText + '</p></li>';
     });
-
-    console.log(newsFeedHTML);
 
     $('#uk-news-feed').html(newsFeedHTML);
   };

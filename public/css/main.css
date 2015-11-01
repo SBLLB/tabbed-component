@@ -90,4 +90,5 @@ main {
 ol li {
   list-style-type: decimal;
   list-style-position: inside;
+  height: 20%;
 }
