@@ -4,6 +4,7 @@ $(document).ready(function() {
   var guardianAPI = "https://content.guardianapis.com/search?api-key=" + apiKey;
   var guardianOptions = {
     section: "uk-news",
+    "show-fields": "trailText",
     format: "json"
   };
 
