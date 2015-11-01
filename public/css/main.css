@@ -51,9 +51,9 @@ main {
     padding-bottom: .4em;
 }
 
-#uk-news:checked ~ .tabs #uk-news-tab,
-#football:checked ~ .tabs #football-tab,
-#travel:checked ~ .tabs #travel-tab {
+#uk-news:checked ~ .tabs #uk-news,
+#football:checked ~ .tabs #football,
+#travel:checked ~ .tabs #travel {
   border-bottom: .15em solid white;
   cursor: default;
 }
