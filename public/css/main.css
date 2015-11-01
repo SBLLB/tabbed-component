@@ -1,3 +1,39 @@
+/* ----------------Generic CSS  --------------*/
+
 html {
-  background-color: salmon;
+  background-color: #F5F5F5;
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+
+/* ----------------Demo header --------------*/
+
+header {
+  height: 10%;
+}
+header div {
+  background-color: #00456E;
+  position: relative;
+  height: 100%;
+}
+
+header h1 {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ----------------Tabbed Component --------------*/
+
+main {
+  height: 90%;
 }
