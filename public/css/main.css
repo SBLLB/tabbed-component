@@ -37,3 +37,27 @@ header h1 {
 main {
   height: 90%;
 }
+
+.news-tab {
+  display: inline-block;
+}
+
+#uk-news:checked ~ .tabs #uk-news-tab,
+#football:checked ~ .tabs #football-tab,
+#travel:checked ~ .tabs #travel-tab {
+  background-color: salmon;
+}
+
+#uk-news:checked ~ .feeds #uk-news-feed,
+#football:checked ~ .feeds #football-feed,
+#travel:checked ~ .feeds #travel-feed {
+  background-color: yellow;
+}
+
+.tabs {
+  height: 10%;
+}
+
+.panels {
+  height: 90%;
+}

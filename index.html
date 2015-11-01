@@ -14,11 +14,50 @@
 
     <header class="row">
       <div class="col-sm-12 col-md-6 col-md-offset-3">
-        <h1> Tabbed Component Demo</h1>
+        <h1>Tabbed Component Demo</h1>
       </div>
     </header>
 
-    <main> </main>
+    <main class="row"> 
+  
+      <input class="radio-button" type="radio" title="uk-news" name="tab-demo" id="uk-news" checked />
+      <input class="radio-button" type="radio" title="football" name="tab-demo" id="football" />
+      <input class="radio-button" type="radio" title="travel" name="tab-demo" id="travel" />
+
+      <section class="tabs"ß>
+        <label for="uk-news" id="uk-news-tab" class="news-tab">UK News</label>
+        <label for="football" id="football-tab" class="news-tab">Football</label>
+        <label for="travel" id="travel-tab" class="news-tab">Travel</label>
+      </section>
+
+      <section class="feeds">
+        <ol id="uk-news-feed" class="feed">
+          <li>Test UK News</li>
+          <li>Test UK News</li>
+          <li>Test UK News</li>
+          <li>Test UK News</li>
+          <li>Test UK News</li>
+          <li>Test UK News</li>
+        </ol>
+        <ol id="football-feed" class="feed">
+          <li>Test Football News</li>
+          <li>Test Football News</li>
+          <li>Test Football News</li>
+          <li>Test Football News</li>
+          <li>Test Football News</li>
+          <li>Test Football News</li>
+        </ol>
+        <ol id="travel-feed" class="feed">
+          <li>Test Travel News</li>
+          <li>Test Travel News</li>
+          <li>Test Travel News</li>
+          <li>Test Travel News</li>
+          <li>Test Travel News</li>
+          <li>Test Travel News</li>
+        </ol>
+      </section>
+
+    </main>
     
   </body>
 
